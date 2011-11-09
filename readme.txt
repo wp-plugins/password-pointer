@@ -10,7 +10,7 @@ Creates a pointer that nags users to change their password.
 
 == Description ==
 
-When I build sites for clients, I create a user and give it a randomly generated password. I always ask them to change it to something they'll remember, but I know that most don't. This plugin will (hopefully) fix that.
+When I build sites for clients, I create their user and give them a randomly generated password. I always ask them to change it to something they'll remember, but most don't know where to do this. This plugin will (hopefully) fix that.
 
 Once they click "close" they won't see the nag again.
 
