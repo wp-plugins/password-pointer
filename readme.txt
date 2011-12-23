@@ -16,10 +16,6 @@ When I build sites for clients, I create their user and give them a randomly gen
 
 Once they click "close" they won't see the nag again.
 
-== Screenshots ==
-
-1. The pointer points to their name in the top right corner, which they can click to edit their profile.
-
 == Changelog ==
 
 **Version 0.1**
