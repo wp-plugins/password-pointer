@@ -3,7 +3,7 @@
  * Plugin Name: Password Pointer
  * Plugin URI: http://www.billerickson.net/
  * Description: Creates a pointer that nags users to change their password.
- * Version: 0.1
+ * Version: 1.1
  * Author: Bill Erickson
  * Author URI: http://www.billerickson.net
  *
@@ -15,7 +15,7 @@
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
  * @package Password Pointer
- * @version 0.1
+ * @version 1.1
  * @author Bill Erickson <bill@billerickson.net>
  * @copyright Copyright © 2011, Bill Erickson
  * @link http://www.billerickson.net/shortcode-to-display-posts/
@@ -47,6 +47,7 @@ add_action( 'admin_enqueue_scripts', 'be_password_pointer_enqueue' );
 function be_password_pointer_print_admin_bar() {
 	$pointer_content  = '<h3>' . 'Change your password!' . '</h3>';
 	$pointer_content .= '<p>' . 'Change your randomly generated password to one that you will remember.' . '</p>';
+	$pointer_content = apply_filters( 'password_pointer_message', $pointer_content );
 
 ?>
 <script type="text/javascript">
